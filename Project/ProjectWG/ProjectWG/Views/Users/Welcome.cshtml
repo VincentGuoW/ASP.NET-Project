@@ -1,0 +1,16 @@
+﻿@model ProjectWG.Models.Users
+
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome, @ViewBag.Username!</h2>
+
+@if (ViewBag.Username != null)
+{
+                                <p>Dear: @ViewBag.Username, feel free to click 'Search Vehicles' to find vehicles or use 'Post Vehicles' to list a vehicle.</p>
+}
+else
+{
+                        <p>Please login first</p>
+}
